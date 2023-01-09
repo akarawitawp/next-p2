@@ -2,17 +2,17 @@ import { NextCustomPage } from "../../types/next";
 import Link from "next/link";
 import NavBar from "../../components/NavBar";
 import FooterCopy from "../../components/FooterCopy";
+import NavLayout from "../../components/NavLayout";
 
 const OurService: NextCustomPage = () => {
   return (
     <div className="w-full">
-      <NavBar />
       <div className="flex flex-col justify-around ">
-        <h1 className="w-[850px] h-[250px] text-7xl text-bold ml-[100px] mt-[200px]">
+        <h1 className="w-[850px] h-[250px] text-7xl text-bold ml-[-100px] mt-[200px]">
           รับสั่งสินค้าทุกเว็บในXXX และรับประมูล สั่งได้ตลอดวัน ราคาพิเศษตลอด
           <span className="text-orange-400"> 24 ชั่วโมง</span>
         </h1>
-        <h2 className="text-4xl ml-[100px]">
+        <h2 className="text-4xl ml-[-100px]">
           บริการครบวงจรสำหรับสายพรีออเดอร์ รวมถึงพ่อค้าแม่ค้าสายขายส่ง
         </h2>
       </div>
@@ -81,4 +81,5 @@ const OurService: NextCustomPage = () => {
     </div>
   );
 };
+OurService.Layout = NavLayout;
 export default OurService;

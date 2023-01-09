@@ -2,11 +2,12 @@ import { NextCustomPage } from "../types/next";
 import Link from "next/link";
 import NavBar from "../components/NavBar";
 import FooterCopy from "../components/FooterCopy";
+import ToggleNavBar from "../components/ToggleNavBar";
+import NavLayout from "../components/NavLayout";
 
 const HomePage: NextCustomPage = () => {
   return (
     <div className="h-screen w-full ">
-      <NavBar />
       <div className="mx-auto mt-[180px] flex flex-col justify-center items-center">
         <h1 className="w-[500px] h-[100px] text-5xl text-bold text-center leading-18">
           นำสินค้าเข้าจากXXX <br />
@@ -29,4 +30,5 @@ const HomePage: NextCustomPage = () => {
     </div>
   );
 };
+HomePage.Layout = NavLayout;
 export default HomePage;

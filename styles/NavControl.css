@@ -1,0 +1,26 @@
+.nav-menu{
+    background: #fafcfa;
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 3s
+}
+.nav-menu.active{
+    left: 0;
+    transition: 3s;
+}
+.navbar{
+    display: flex;
+    height: 80px;
+    justify-content: flex-start;
+    align-items: center;
+}
+.nav-menu-item{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
